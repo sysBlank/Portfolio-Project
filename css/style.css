@@ -1,0 +1,424 @@
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+* {
+    font-family: 'Droid Serif', serif;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+/* ======= 
+    Main Menu
+========= */
+
+.menu {
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 45px;
+    border-bottom: 3px solid black;
+}
+
+.fixed {
+    width: 100%;
+    top: 0px;
+    position: fixed;
+    z-index: 1;
+}
+
+.menu a {
+    height: 22px;
+    color: black;
+}
+
+.menu ul li a:hover {
+    color: skyblue;
+    border-bottom: solid 1px skyblue;
+}
+
+.menu ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px;
+}
+
+.menu ul li {
+    margin-right: 10px;
+}
+
+.menu p {
+    margin-top: 10px;
+    font-size: 1.3em;
+    opacity: .6;
+}
+
+.menu ul li a {
+      text-decoration: none;
+  outline: 0;
+  color: black;
+  border-bottom: solid 1px transparent;
+  -webkit-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+          transition: color .2s ease-out, border-bottom-color .2s ease-out;
+ font-size: 1em;
+}
+
+.menu a img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40px;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.selected {
+    color: lightblue !important;
+    border-bottom: 1px solid skyblue !important;
+}
+
+/* ==== About Me ==== */
+
+.indent-one {
+    text-indent: 40px;
+}
+
+.indent-three {
+    text-indent: 80px;
+}
+
+.about {
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+.about img {
+    border-radius: 50%;
+    float: left;
+    margin-right: 50px;
+}
+
+.about p {
+    font-size: .9em;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    background-color: lightblue;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 2px;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    margin-left: 400px;
+}
+
+.about-text {
+     padding-top: 60px;
+}
+
+.button:hover {
+    background-color: skyblue;
+    cursor: pointer;
+}
+.button p {
+    text-decoration: none;
+    color: black;
+    -ms-flex-pack: distribute;
+    margin: auto;
+    font-size: 1.1em;
+}
+
+.content {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.secondary-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-top: 100px;
+    border-top: 3px solid black;
+}
+
+.portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 50%;
+    margin-bottom: 70px;
+}
+
+.portfolio h2 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+}
+
+.portfolio ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.portfolio ul li {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 25%;
+    flex: 1 0 25%;
+    margin-right: 64px;
+}
+
+.portfolio img {
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.contact {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.social img {
+    width: 50px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+
+.social ul:first-child {
+    margin-right: 10px;
+}
+
+.social {
+    border-bottom: 3px solid black;
+}
+
+.skillbar {
+    margin-top: -90px;
+}
+
+#skills-h2 {
+    margin-top: 50px;
+}
+
+.about {
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.contact address {
+    text-align: left;
+    color: gray;
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+}
+
+.glyphicon {
+    margin-left: -40px;
+    margin-right: 20px;
+}
+
+.main-footer {
+    height: 100px;
+    border-top: 3px solid black;
+    position:absolute;
+    top: 100;
+}
+
+.subscribe-form {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.copyright {
+    margin-top: 13px;
+}
+
+form p {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* About Text 2 */
+
+.about-page-text {
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.about-page img {
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 300px;
+    margin-right: 10%;
+}
+
+.skillbar {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.skillbar h2 {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.about-page {
+    text-align: center;
+}
+
+/* Sticky footer */
+
+.content {
+    min-height: calc(100vh - 154px);
+}
+
+.portfolio-page ul li {
+    padding-top: 0px;
+}
+
+.portfolio-page h2 {
+    text-align: center;
+}
+
+.port-one-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 0;
+}
+.portfolio-page a img {
+    margin-top: 20px;
+}
+
+/*Contact-page*/
+
+.social-page img {
+    width: 80px;
+    margin-top: 30px;
+    margin-right: 15px;
+    display: inline-block;
+    float: right;
+}
+
+.contact-page h2 {
+    text-align: center;
+}
+
+.contact-page p {
+    text-align: center;
+    opacity: .7;
+    font-size: 1.4em;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-page ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+
+.h2-mail {
+    margin-right: auto;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+}
+
+form input, textarea {
+    border: 3px solid black;
+    border-radius: 3px;
+}
+
+.mail-label {
+    margin-top: 20px;
+}
+
+.message-label {
+    margin-top: 30px;
+}
+
+#msg-button {
+    width: 100px;
+    height: 40px;
+    border: 3px solid black;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+button {
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 3px;
+}
+
+#newsletter {
+    padding-left: 5px;
+}
+
+input[type='text'] {
+    height: 35px;
+    font-size: 1.4em !important;
+}
